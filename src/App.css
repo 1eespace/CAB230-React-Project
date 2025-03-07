@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+main {
+  font-family: "Nunito", sans-serif;
+}
+
+.App {
+  min-height: 100%;
+}
+
+/* NavigationBar */
+header {
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  background: rgb(19, 95, 30);
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: 0.1s ease-out;
+}
+  
+.nav-link:hover {
+  color: #e21c1c;
+}
+
+.navigation-bar .navbar-link a {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #e43333;
+  transition: 0.1s ease-out;
+}
+  
+.navigation-bar .navbar-link a:hover {
+  color: #ffffff;
+}
+
+.NavLink-item {
+  margin-right: 10px;
+}
+
+.logout-button {
+  border: none;
+  background: none;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #e21c1c;
+  transition: 0.1s ease-out;
+}
+
+.logout-button:hover {
+  color: #ffffff;
+}
+
+  /* Footer */
+footer {
+  font-family: "Nunito", sans-serif;
+  background: rgb(19, 95, 30);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+  /* Hero */
+.hero-title {
+  color: #ffffff;
+  font-size: 80px;
+  margin: 0;
+}
+  
+.hero-subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 40px 180px;
+}
+  
+.hero {
+  min-height: 600px; 
+  min-width: 300px;
+  text-align: center;
+  background-color: #000000;
+}
+  
+.hero-content {
+  padding-top: 50px;
+}
+  
+/* Login $ Register */
+.login-container {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.login-wrapper {
+  display: inline-block;
+  margin: 0;
+  padding-top: 100px;
+  min-height: 600px;
+  min-width: 300px;
+}
+
+.login-header {
+  padding-bottom: 20px;
+}
+
+.login-wrapper Input {
+  margin: 20px 0;
+}
+
+.login-wrapper Button {
+  min-width: 300px;
+  background-color: rgb(10, 35, 180);
+}
+
+.login-wrapper Button:hover {
+  background-color: rgb(0, 10, 70);
+}
+
+.login-wrapper p {
+  margin-top: 20px;
+}
+
+.register-link {
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.register-link:hover {
+  color: rgb(132, 9, 9);
+  text-decoration: none;
+}
+
+.register-error {
+  color: red;
+}
+
+.register-success {
+  color: green;
+}
+
+/* Movies */
+
+.table-wrapper {
+  font-family: "Nunito", sans-serif;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.page-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.search-filter {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  width: 300px;
+  padding: 50px 0;
+  margin-left: 350px;
+  margin-top: 5px;
+}
+
+.year-filter {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding: 55px 0;
+  width: 150px; 
+  height: 40px;
+  display: block;
+  text-align: left;
+  margin-top: -3px;
+  margin-left: -250px;
+}
+
+.filters p {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding: 20px 0;
+  white-space: nowrap;
+}
+
+p {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.filters-select {
+  margin-right: 10px;
+}
+
+.reset-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 1100px;
+  margin-top: -198px;
+}
+
+.details-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+.search-error-message {
+  margin: 50px 0;
+  text-align: center;
+  color: #e21c1c;
+}
+
+/* MovieDetail */
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+th {
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+td {
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #0a0000;
+}
+
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .hero-title {
+  font-size: 60px;
+  }
+
+  .hero-subtitle {
+  font-size: 14px;
+  padding: 40px 120px;
+  }
+}
+
+@media (max-width: 767px) {
+.hero-title {
+  font-size: 40px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  padding: 40px 80px;
+ }
+}
+
+@media (max-width: 570px) {
+  .hero-subtitle {
+    font-size: 12.5px;
+    padding: 40px 40px;
+  }
+}
